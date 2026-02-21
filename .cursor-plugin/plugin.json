@@ -6,8 +6,8 @@
   "author": {
     "name": "alfmu"
   },
-  "homepage": "https://github.com/alfmu/mysql-mcp",
-  "repository": "https://github.com/alfmu/mysql-mcp",
+  "homepage": "https://github.com/AlfMueller/CurserPlugin-MySql-MariaDB",
+  "repository": "https://github.com/AlfMueller/CurserPlugin-MySql-MariaDB",
   "license": "MIT",
   "keywords": [
     "mysql",
