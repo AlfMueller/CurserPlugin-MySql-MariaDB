@@ -1,0 +1,33 @@
+{
+  "name": "mysql-mcp",
+  "displayName": "MySQL / MariaDB MCP",
+  "version": "1.0.0",
+  "description": "Full MySQL/MariaDB integration for Cursor — MCP server with connection pooling, schema inspection, query execution, data manipulation, and server monitoring. 20 tools covering all database operations.",
+  "author": {
+    "name": "alfmu"
+  },
+  "homepage": "https://github.com/alfmu/mysql-mcp",
+  "repository": "https://github.com/alfmu/mysql-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mysql",
+    "mariadb",
+    "database",
+    "sql",
+    "mcp",
+    "backend",
+    "schema",
+    "query"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "database",
+    "sql",
+    "backend",
+    "mcp-server"
+  ],
+  "mcpServers": "./mcp-servers/",
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "agents": "./agents/"
+}

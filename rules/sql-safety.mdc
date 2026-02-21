@@ -1,0 +1,33 @@
+---
+description: SQL safety guards for MySQL/MariaDB operations — prevents accidental data loss from destructive operations
+alwaysApply: true
+---
+
+# SQL Safety Rules
+
+## Destructive Operations
+
+- NEVER execute `DROP TABLE`, `DROP DATABASE`, `TRUNCATE TABLE` without explicit user confirmation
+- NEVER execute `DELETE` without a `WHERE` clause
+- NEVER execute `UPDATE` without a `WHERE` clause
+- Always show the user what will be affected before executing destructive operations
+- When in doubt, run a `SELECT` with the same `WHERE` clause first to preview affected rows
+
+## Query Best Practices
+
+- Use parameterized queries (`?` placeholders) instead of string interpolation to prevent SQL injection
+- Always use `LIMIT` on large tables to avoid overwhelming results
+- Prefer `EXPLAIN` before running complex queries on large tables
+- Use transactions (`BEGIN`, `COMMIT`, `ROLLBACK`) for multi-statement operations
+
+## Schema Changes
+
+- Always back up or review existing schema with `SHOW CREATE TABLE` before altering
+- Prefer `ALTER TABLE ... ADD COLUMN` with `IF NOT EXISTS` when available (MariaDB)
+- Test schema changes on a non-production database first
+
+## Credentials
+
+- NEVER hardcode database credentials in source files
+- Use environment variables for all connection parameters
+- Never log or display passwords in output
