@@ -8,6 +8,7 @@
   },
   "homepage": "https://github.com/AlfMueller/CurserPlugin-MySql-MariaDB",
   "repository": "https://github.com/AlfMueller/CurserPlugin-MySql-MariaDB",
+  "logo": "./assets/icon.png",
   "license": "MIT",
   "keywords": [
     "mysql",
